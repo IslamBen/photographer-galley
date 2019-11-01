@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" type="image/png"  href="assets/img/logo.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/d6d31a0abf.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+       <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-camera-retro" style="margin-right: 5px;"></i>Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon"><i class="fa fa-bars" id="burger" aria-hidden="true" style="color: #74b600;font-size: 2rem;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active" href="#">Work <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">About</a>
+                <a class="nav-item nav-link" href="#">Blog</a>
+                <a class="nav-item nav-link" href="#">Contact</a>
+              </div>
+            </div>
+       </div> 
+      </nav>
+
+      <section class="view">
+        <div class="background-image" style="background-image: url(assets/img/bg.jpg);"></div>
+        <div class="content">
+            <h1 class="display-4">I'am Photographer</h1>
+            <p class="lead">Iam virtutem ex consuetudine vitae sermonisque nostri interpretemur nec eam, ut quidam docti, verborum magnificentia metiamur virosque bonos eos.</p>
+        </div>
+      </section>
+
+      <section class="work">
+          <h1 class="title">work</h1>
+          <ul class="grid">
+            <li class="image" style="background-image: url(assets/img/image1.jpg);"></li>
+            <li class="image" style="background-image: url(assets/img/image2.jpg);"></li>
+            <li class="image" style="background-image: url(assets/img/image3.jpg);"></li>
+            <li class="image" style="background-image: url(assets/img/image4.jpg);"></li>
+            <li class="image" style="background-image: url(assets/img/image5.jpg);"></li>
+            <li class="image" style="background-image: url(assets/img/image6.jpg);"></li>
+
+          </ul>
+      </section>
+
+      <section class="about-area">
+        <div class="about">
+            <h1 class="title">about</h1>
+            <p class="about-body">Dein Syria per speciosam interpatet diffusa planitiem. hanc nobilitat Antiochia, mundo cognita civitas, cui non certaverit alia advecticiis ita adfluere copiis et internis, et Laodicia et Apamia itidemque Seleucia iam inde a primis auspiciis florentissimae.
+
+                Excogitatum est super his, ut homines quidam ignoti, vilitate ipsa parum cavendi ad colligendos rumores per Antiochiae latera cuncta destinarentur relaturi quae audirent. hi peragranter et dissimulanter honoratorum circulis adsistendo pervadendoque divites domus egentium habitu quicquid noscere poterant vel audire latenter intromissi per posticas in regiam nuntiabant, id observantes conspiratione concordi, ut fingerent quaedam et cognita duplicarent in peius, laudes vero supprimerent Caesaris, quas invitis conpluribus formido malorum inpendentium exprimebat.</p>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h1 class="title">contact</h1>
+        <div class="contact-form">
+          <div class="tools">
+              <div class="item"><i class="fas fa-phone" style="margin-right: 10px;"></i>+213 56555555</div>
+              <div class="item"><i class="fas fa-envelope-square" style="margin-right: 10px;"></i>islam@email.com</div>
+              <div class="item"><i class="fas fa-fax" style="margin-right: 10px;"></i>+213 4484844</div>
+              <div class="item"><i class="fas fa-map-marker" style="margin-right: 10px;"></i>Cheraga,Algiers</div>
+             
+          </div>
+
+          <div class="form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="email">
+            </div>
+            <div class="form-group green-border-focus">
+                <textarea class="form-control" rows="3" placeholder="your message"></textarea>
+              </div>
+            <button type="submit" class="btn">send</button>
+          </div>
+
+          <div class="web"> 
+              <a href="#" class="social"><i class="fab fa-facebook-square"></i></a>
+              <a href="#" class="social"><i class="fab fa-twitter-square"></i></a>
+              <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+          <div class="made-by">
+            <p>made by <br><span style="color:  #74b600;">Islam</span></p>
+          </div>  
+
+        </div>
+      </section>
+
+
+
+    <script src="assets/js/bootstrap.js"></script>
+    <script>
+    $(function () {
+    $(document).scroll(function () {
+        var $nav = $("#mainNavbar");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+    });
+    });
+
+    $("#burger").on("click",function(){
+      $('.collapse').toggle(1000);
+    })
+  </script>
+    
+
+</body>
+</html>
